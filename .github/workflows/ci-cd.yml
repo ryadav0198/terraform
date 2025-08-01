@@ -7,6 +7,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    enviorment:
+      name: production
+      url:  http://3.82.221.217
 
     steps:
       - name: Checkout Code
