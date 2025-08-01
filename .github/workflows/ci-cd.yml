@@ -31,7 +31,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_KEY }}
           script: |
-            cd python-app
+            cd /home/ec2-user/python-app
             docker stop python-app || true
             docker rm python-app || true
             docker build -t python-app .
